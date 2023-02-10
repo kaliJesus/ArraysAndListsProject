@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System;
 
 namespace ArraysAndLists
 {
@@ -9,6 +10,29 @@ namespace ArraysAndLists
             //TODO:
 
             // Create an int Array and populate numbers 1-10
+            var Collection = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var evens = new List<int>();
+            var odds = new List<int>();
+
+            foreach(var num in Collection)
+            {
+                if (num % 2 == 0)
+                { 
+                    evens.Add(num);
+                    Console.WriteLine($"{num} is even");
+                }
+                else
+                {
+                    odds.Add(num);
+                    Console.WriteLine($"{num} is odd");
+                }
+            }
+
+           
+
+
+
+            
 
             /* Create two Lists of type int.
              * Name one List "evens"
